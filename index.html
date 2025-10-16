@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MockTest Lite - Smart Practice Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__logo">MockTest <span>Lite</span></h1>
+      <nav class="header__nav">
+        <a href="#features" class="header__link">Benefits</a>
+        <a href="#how-to" class="header__link">How It Works</a>
+        <a href="#footer" class="header__link">Contact</a>
+      </nav>
+      <a href="#" class="header__login">Đăng nhập</a>
+      <button id="theme-toggle" class="header__theme-btn" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div class="hero__content">
+        <h2 class="hero__title">Ace Your Exams with Smart Practice</h2>
+        <p class="hero__subtitle">
+          MockTest Lite helps you prepare effectively with realistic tests and instant feedback.
+        </p>
+        <button class="hero__cta">Start Free Trial</button>
+      </div>
+      <div class="hero__image">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920260.png" alt="MockTest Illustration" />
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features fade-in">
+      <h3 class="features__title">Why Choose MockTest Lite?</h3>
+      <div class="features__grid">
+        <div class="features__item">
+          <h4 class="features__item-title">Real Test Experience</h4>
+          <p class="features__item-desc">Simulate actual exams with our accurate mock test engine.</p>
+        </div>
+        <div class="features__item">
+          <h4 class="features__item-title">Instant Feedback</h4>
+          <p class="features__item-desc">Get quick results and explanations for every question.</p>
+        </div>
+        <div class="features__item">
+          <h4 class="features__item-title">Progress Tracking</h4>
+          <p class="features__item-desc">Monitor your learning curve and improve efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How To Use Section -->
+    <section id="how-to" class="how fade-in">
+      <h3 class="how__title">How It Works</h3>
+      <ol class="how__steps">
+        <li class="how__step">1. Sign up and select your test category.</li>
+        <li class="how__step">2. Take timed mock tests and review answers.</li>
+        <li class="how__step">3. Track progress and improve with analytics.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <p class="footer__text">© 2025 MockTest Lite | Designed for smarter learning</p>
+  </footer>
+
+  <script>
+    // Toggle dark mode
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      btn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
